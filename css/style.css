@@ -34,7 +34,7 @@ img {
   max-height: 100%;
   display: block;
   vertical-align: middle;
-  margin: auto;
+ /* margin: auto;*/
 }
 .tHide {
   text-overflow: ellipsis;
@@ -373,7 +373,7 @@ ul li {
 }
 .top_tit {
   text-align: center;
-  margin: 60px auto 40px;
+  margin: 60px auto 60px;
 }
 .top_tit span {
   display: inline-block;
@@ -458,7 +458,7 @@ ul li {
 .wyzl ul li a:hover img {
   transform: scale(1.1);
 }
-.wyzl ul li:after {
+/*.wyzl ul li:after {
   content: "";
   padding-bottom: 71.05263157894737%;
   border: 1px solid #d9d9d9;
@@ -467,7 +467,7 @@ ul li {
   top: -10px;
   left: -10px;
   z-index: 9;
-}
+}*/
 .wyzl ul li:hover:after {
   border: 1px solid #81a849;
 }
@@ -1662,7 +1662,7 @@ ul li {
 .travel_con .tra_ul ul li a:hover img {
   transform: scale(1.1);
 }
-.travel_con .tra_ul ul li:after {
+/*.travel_con .tra_ul ul li:after {
   content: "";
   padding-bottom: 71.05263157894737%;
   border: 1px solid #d9d9d9;
@@ -1671,7 +1671,7 @@ ul li {
   top: -10px;
   left: -10px;
   z-index: 9;
-}
+}*/
 .travel_con .tra_ul ul li:hover:after {
   border: 1px solid #81a849;
 }
@@ -1747,12 +1747,13 @@ ul li {
 }
 .travel_show .tra_con .tu_qie .left .pic img {
   z-index: 99999;
+  border:1px solid #999;
 }
 .travel_show .tra_con .tu_qie .left .pic i {
   display: block;
   padding-bottom: 70.83333333333334%;
 }
-.travel_show .tra_con .tu_qie .left .pic:after {
+/*.travel_show .tra_con .tu_qie .left .pic:after {
   content: "";
   padding-bottom: 71.05263157894737%;
   border: 1px solid #d9d9d9;
@@ -1761,7 +1762,7 @@ ul li {
   top: -10px;
   left: -10px;
   z-index: 9;
-}
+}*/
 .travel_show .tra_con .tu_qie .left .pic:hover:after {
   border: 1px solid #81a849;
 }
@@ -1787,12 +1788,13 @@ ul li {
 }
 .travel_show .tra_con .tu_qie .right ul li .pic_li img {
   z-index: 9999;
+  border:1px solid #999;
 }
 .travel_show .tra_con .tu_qie .right ul li .pic_li i {
   display: block;
   padding-bottom: 71.42857142857143%;
 }
-.travel_show .tra_con .tu_qie .right ul li .pic_li:after {
+/*.travel_show .tra_con .tu_qie .right ul li .pic_li:after {
   content: "";
   padding-bottom: 71.05263157894737%;
   border: 1px solid #d9d9d9;
@@ -1801,10 +1803,10 @@ ul li {
   top: -10px;
   left: -10px;
   z-index: 9;
-}
-.travel_show .tra_con .tu_qie .right ul li .pic_li:hover:after {
+}*/
+/*.travel_show .tra_con .tu_qie .right ul li .pic_li:hover:after {
   border: 1px solid #81a849;
-}
+}*/
 @media (max-width: 480px) {
   .travel_show .tra_con .tu_qie .right ul li {
     margin-bottom: 10px;

@@ -36,9 +36,9 @@
 		  <div class="logo_right">
 		  	  <nav class="nav">
 		   		<ul>
-		   			<li><a href="index.html" class="active">首页</a></li>
+		   			<li><a href="index.html">首页</a></li>
 		   			<li><a href="scenic_overview.html">关于我们</a></li>
-		   			<li><a href="court_travel.html">产品展示</a></li>
+		   			<li><a href="court_travel.html" class="active">产品展示</a></li>
 		   			<li><a href="comfortable.html">制作工艺</a></li>
 		   			<li><a href="news.html">在线订购</a></li>
 		   			<li><a href="##">发货查询</a></li>
@@ -54,7 +54,7 @@
 
 	<!--banner  start-->
 	<section class="banner_zi">
-	    <div><img src="images/banner_yuan.png" alt=""></div>
+	    <div><img src="images/product_banner.jpg" alt=""></div>
 	</section>
 	<!--banner end-->
 	<div class="head_bar">
@@ -78,36 +78,45 @@
 					<ul>
 						<li>
 							<div class="pic_li">
-								<img src="images/product_1.png" alt="" class="vcenter"/>
+								<img src="" alt="" class="vcenter"/>
 								<i></i>
 							</div>
 						</li><li>
 							<div class="pic_li">
-								<img src="images/product_2.png" alt="" class="vcenter" />
+								<img src="" alt="" class="vcenter" />
 								<i></i>
 							</div>
 						</li>
 						<li>
 							<div class="pic_li">
-								<img src="images/product_3.png" alt="" class="vcenter" />
+								<img src="" alt="" class="vcenter" />
 								<i></i>
 							</div>
 						</li>
 						<li>
 							<div class="pic_li">
-								<img src="images/product_1.png" alt="" class="vcenter"/>
+								<img src="" alt="" class="vcenter"/>
+								<i></i>
+							</div>
+						</li>
+						<li>
+							<div class="pic_li">
+								<img src="" alt="" class="vcenter"/>
+								<i></i>
+							</div>
+						</li>
+						<li>
+							<div class="pic_li">
+								<img src="" alt="" class="vcenter"/>
 								<i></i>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<p>
+			<p class="Text">
 				使用方法：
-使用消毒棉签将软膏均匀涂抹在鼻腔内,早中晚各一次。涂抹后请使用双手食指用力按揉鼻子两侧的迎香穴和鼻翼2-3分钟。
-
-			</p>
-			<p>
+				使用消毒棉签将软膏均匀涂抹在鼻腔内,早中晚各一次。涂抹后请使用双手食指用力按揉鼻子两侧的迎香穴和鼻翼2-3分钟。
 				适用于鼻腔粘膜及粘膜下组织有炎症，急慢性鼻炎、鼻窦炎、顽固性鼻炎、过敏性鼻炎、鼻粘膜糜烂，及其引起的鼻腔充血或水肿、鼻塞、流脓清鼻涕、流鼻血、烂鼻腔、鼻腔干燥、鼻痒、打喷嚏、嗅觉失灵、头痛、乏力、瞌睡、记忆力减退等现象人群。
 			</p>
 		</div>
@@ -184,7 +193,7 @@
        		</div>
 
        </div>
-       <div class="copy">Copyright© 2016  版权所有：郑州古草世家有限公司</div>
+       <div class="copy">Copyright© 2016  版权所有：郑州古草世家有限公司 网站建设:<a href="http://www.zzqwwl.com" style='color:#999999'>郑州千维网络</a></div>
 	</footer>
     <!--footer  end-->
 
@@ -223,12 +232,38 @@
 	$(function(){ $('input, textarea').placeholder()
 
 var site = localStorage.getItem('site');
-// console.log(site) 图片路径
-		var listImg = $('.pic').find('img');
 
-		listImg.attr('src',site);
+var siteText = localStorage.getItem('sitetext');
 
-		console.log(listImg)
+	console.log(siteText)
+	site = site.substring(1,site.length-1);
+
+	siteText = siteText.substring(1,siteText.length-1);
+
+	var listImg = $('.pic').find('img').attr('src',site);
+
+	var listText = $('.right').eq(0).find('img');
+
+	var siteList =  site.substring(0,site.length-4);
+
+	 	for(var i = 0;i <= listText.length; i++){
+
+	 			$(listText[0]).attr('src',siteList+'1.jpg');
+	 			$(listText[1]).attr('src',siteList+'2.jpg');
+	 			$(listText[2]).attr('src',siteList+'3.jpg');
+	 			$(listText[3]).attr('src',siteList+'4.jpg');
+	 			$(listText[4]).attr('src',siteList+'5.jpg');
+
+	 	}
+
+	var Text = $('.Text').text(siteText);
+
+
+
+
+
+
+
 
 
 
